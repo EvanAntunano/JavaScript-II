@@ -87,12 +87,10 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
 	for (i = 0; i < list.length; i++){
 		if (list[i] = item){
-			return cb ("yes");
+			return cb ("true");
 		}
 	}
-
 	return cb ("false");
-
 }
 
 contains("yo-yo", items, isItemPresent =>
