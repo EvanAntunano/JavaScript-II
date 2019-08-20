@@ -113,6 +113,7 @@ runners.filter((donor) => {
 });
 console.log(graciousDonors);
 
+
 // Problem 2
 // Provide all runners' email addresses and full names,
 let runnerEmail = [];
@@ -122,4 +123,14 @@ runners.forEach(function(i) {
 });
 console.log(runnerEmail)
 
+
 // Problem 3
+// Show all company names along with Donation amount
+let companyDonation = [];
+  
+runners.filter((company) => {
+  if (company.donation > 0 === true){
+    companyDonation.push(company.company_name, company.donation);
+  }
+  });
+console.log(companyDonation);
