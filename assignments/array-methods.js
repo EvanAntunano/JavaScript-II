@@ -112,6 +112,14 @@ runners.filter((donor) => {
   } 
 });
 console.log(graciousDonors);
+
 // Problem 2
+// Provide all runners' email addresses and full names,
+let runnerEmail = [];
+
+runners.forEach(function(i) {
+  runnerEmail.push(`${i.first_name} ${i.last_name} email: ${i.email}`);
+});
+console.log(runnerEmail)
 
 // Problem 3
